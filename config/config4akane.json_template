@@ -1,0 +1,89 @@
+{
+  "root": {
+    "check_interval": 120,
+    "print_interval": 10,
+    "data_path": "./",
+    "logger": { "log_path": "./log", "log_level": "INFO" },
+    "request_header": {},
+    "uploader": {
+      "upload_by_edit": true,
+      "thread_pool_workers": 1,
+      "max_retry": 30
+    },
+    "enable_baiduyun": false
+  },
+  "spec": [
+    {
+      "room_id": "411318",
+      "recorder": { "keep_raw_record": false },
+      "parser": {
+        "interval": 120,
+        "up_ratio": 4.5,
+        "down_ratio": 0.6,
+        "topK": 5
+      },
+      "clipper": {
+        "enable_clipper": false,
+        "min_length": 60,
+        "start_offset": -20,
+        "end_offset": 10
+      },
+      "manual_clipper": {
+        "enabled": true,
+        "cmdheader": ["炸鼠条"],
+        "uid": ["8138686", "9166961", "19743167", "14601174", "10067346"]
+      },
+      "uploader": {
+        "account": {
+          "username": "XXX",
+          "password": "XXX",
+          "access_token": "XXX",
+          "refresh_token": "XXX",
+          "cookies": {
+            "SESSDATA": "XXX",
+            "bili_jct": "XXX",
+            "DedeUserID": "XXX",
+            "DedeUserID__ckMd5": "XXX",
+            "sid": "XXX"
+          }
+        },
+        "copyright": 2,
+        "record": {
+          "upload_record": false,
+          "keep_record_after_upload": false,
+          "split_interval": 900,
+          "title": "【红晓音Akane】{date} - {room_name} - 直播录播",
+          "tid": 27,
+          "tags": [
+            "直播录播",
+            "红晓音Akane",
+            "虚拟主播",
+            "VTuber",
+            "虚拟UP主",
+            "红晓音"
+          ],
+          "desc": "切片自{date} 红晓音Akane 直播\n---------------------------------------\n本视频由全自动切片型智能DD机上传~ modified by uploader",
+          "cover": "XXX"
+        },
+        "clips": {
+          "upload_clips": true,
+          "keep_clips_after_upload": false,
+          "title": "【红晓音Akane】{date} - {room_name} - 直播精彩剪辑【自动切片】",
+          "tid": 27,
+          "tags": [
+            "直播录播",
+            "剪辑",
+            "红晓音Akane",
+            "虚拟主播",
+            "VTuber",
+            "虚拟UP主",
+            "红晓音"
+          ],
+          "desc": "切片自{date} 红晓音Akane 直播\n---------------------------------------\n本视频由全自动切片型智能DD机剪辑上传~ modified by uploader",
+          "cover": "XXX"
+        }
+      },
+      "backup": false
+    }
+  ]
+}
